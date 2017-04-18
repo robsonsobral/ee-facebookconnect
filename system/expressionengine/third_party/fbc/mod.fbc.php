@@ -8,7 +8,7 @@
  * @copyright	Copyright (c) 2010-2015, Solspace, Inc.
  * @link		http://solspace.com/docs/facebook_connect
  * @license		http://www.solspace.com/license_agreement
- * @version		3.0.0
+ * @version		3.0.1
  * @filesource	fbc/mod.fbc.php
  */
 
@@ -209,7 +209,7 @@ class Fbc extends Module_builder_fbc
 	}
 
 	/*	End allow email */
-	
+
 	// -------------------------------------------------------------
 
 	/**
@@ -1255,7 +1255,7 @@ class Fbc extends Module_builder_fbc
 		// --------------------------------------------
 		//  Profile pic
 		// --------------------------------------------
-		
+
 		if ($method == 'profile_pic')
 		{
 			return '<img src="//graph.facebook.com/' . $this->api->get_user_id() . '/picture?' . implode('&', $fb_arguments) . '" />';
@@ -1624,7 +1624,7 @@ class Fbc extends Module_builder_fbc
 			// --------------------------------------------
 			//	Parse
 			// --------------------------------------------
-			
+
 			$cond['fbc_login_button'] = $cond['fbc_login_logout_button'] = '<div class="fb-login-button"' . $onlogin . $max_rows . $button_size . $default_audience . $show_faces . $permissions . ' data-auto-logout-link="false">' . $login_button_label . '</div>';
 		}
 
@@ -1878,10 +1878,10 @@ class Fbc extends Module_builder_fbc
 		// --------------------------------------------
 
 		$this->api();
-		
+
 		//$info = $this->api->get_user_info();
 		//print_r($info);
-		
+
 		$force_refresh	= (ee()->session->userdata('member_id') == '0') ? TRUE: FALSE;
 
 		// By sending TRUE, we force a refresh of login status from the API,
@@ -2154,7 +2154,7 @@ class Fbc extends Module_builder_fbc
 		if ( ! empty( $member_data['facebook_connect_user_id'] ) )
 		{
 			$profile_pic_args	= array();
-		
+
 			// --------------------------------------------
 			//	Profile pic type
 			// --------------------------------------------
@@ -2230,14 +2230,14 @@ class Fbc extends Module_builder_fbc
 			// --------------------------------------------
 
 			$this->api();
-			
+
 			//$this->dd($this->api->get_graph( $member_data['facebook_connect_user_id'] ));
 
 			if ( ! empty( $member_data['facebook_connect_user_id'] ) AND ( $graph = $this->api->get_graph( $member_data['facebook_connect_user_id'] ) ) !== FALSE )
 			{
 				$out['fbc_facebook_username']	= '';
 				$out['fbc_facebook_education']	= '';
-				
+
 				foreach ( $graph as $key => $val )
 				{
 					$out[ 'fbc_facebook_' . $key ]	= $val;

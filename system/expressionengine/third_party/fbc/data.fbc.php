@@ -8,7 +8,7 @@
  * @copyright	Copyright (c) 2010-2015, Solspace, Inc.
  * @link		http://solspace.com/docs/facebook_connect
  * @license		http://www.solspace.com/license_agreement
- * @version		3.0.0
+ * @version		3.0.1
  * @filesource	fbc/data.fbc.php
  */
 
@@ -751,11 +751,11 @@ class Fbc_data extends Addon_builder_data_fbc
 			'user_videos',
 			'user_website',
 			'user_work_history',
-			'read_friendlists',
+			'read_custom_friendlists',
 			'read_insights',
 			'read_mailbox',
 			'read_page_mailbox',
-			'read_stream',
+			'user_posts',
 			'manage_notifications',
 			'manage_pages',
 			'publish_actions',

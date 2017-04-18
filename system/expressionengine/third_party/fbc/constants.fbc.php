@@ -10,13 +10,13 @@
  * @copyright	Copyright (c) 2010-2015, Solspace, Inc.
  * @link		http://solspace.com/docs/facebook_connect
  * @license		http://www.solspace.com/license_agreement
- * @version		3.0.0
+ * @version		3.0.1
  * @filesource	fbc/constants.fbc.php
  */
 
 if ( ! defined('FBC_VERSION'))
 {
-	define('FBC_VERSION',	'3.0.0');
+	define('FBC_VERSION',	'3.0.1');
 	define('FBC_DOCS_URL',	'http://solspace.com/docs/facebook_connect/');
 	define('FBC_ACTIONS',	'account_sync|activate_member|email_sync|facebook_post_authorize_callback|facebook_post_remove_callback|facebook_login|facebook_logout|register');
 	define('FBC_PREFERENCES',	'fbc_app_id|fbc_secret|fbc_eligible_member_groups|fbc_member_group|fbc_account_activation|fbc_passive_registration|fbc_confirm_account_sync');
