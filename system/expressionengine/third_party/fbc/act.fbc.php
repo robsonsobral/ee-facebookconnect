@@ -10,7 +10,7 @@
  * @copyright	Copyright (c) 2010-2015, Solspace, Inc.
  * @link		http://solspace.com/docs/facebook_connect
  * @license		http://www.solspace.com/license_agreement
- * @version		3.0.0
+ * @version		3.0.1
  * @filesource	fbc/act.fbc.php
  */
 

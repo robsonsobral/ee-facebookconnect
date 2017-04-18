@@ -8,7 +8,7 @@
  * @copyright	Copyright (c) 2010-2015, Solspace, Inc.
  * @link		http://solspace.com/docs/facebook_connect
  * @license		http://www.solspace.com/license_agreement
- * @version		3.0.0
+ * @version		3.0.1
  * @filesource	fbc/api.fbc.php
  */
 
@@ -499,13 +499,13 @@ class Fbc_api extends Module_builder_fbc
 			if (isset($info['data']))
 			{
 				$info	= (array) $info['data'];
-				
+
 				$out	= array();
-				
+
 				foreach ($info as $val)
 				{
 					if ($val['status'] != 'granted') continue;
-					
+
 					$out[]	= $val['permission'];
 				}
 
@@ -517,7 +517,7 @@ class Fbc_api extends Module_builder_fbc
 		catch (Exception $e)
 		{
 			$this->error[]	= $e->getMessage();
-			
+
 			//$this->dd($this->error);
 
 			return array();
