@@ -751,7 +751,7 @@ class Fbc_data extends Addon_builder_data_fbc
 			'user_videos',
 			'user_website',
 			'user_work_history',
-			'read_friendlists',
+			'read_custom_friendlists',
 			'read_insights',
 			'read_mailbox',
 			'read_page_mailbox',
