@@ -755,7 +755,7 @@ class Fbc_data extends Addon_builder_data_fbc
 			'read_insights',
 			'read_mailbox',
 			'read_page_mailbox',
-			'read_stream',
+			'user_posts',
 			'manage_notifications',
 			'manage_pages',
 			'publish_actions',
